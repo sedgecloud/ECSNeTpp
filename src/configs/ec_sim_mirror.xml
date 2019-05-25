@@ -1,0 +1,18 @@
+<config>
+	<interface hosts="stargazer3" address="10.0.0.2"/>
+	<interface hosts="pi2Bs*" address="10.0.2.x"/>
+	<interface hosts="pi3Bs*" address="10.0.3.x"/>
+	<interface hosts="albacore5" towards="stargazer3" address="10.0.0.x"/>
+	<interface hosts="albacore5" towards="pi2Bs*" address="10.0.2.x"/>
+	<interface hosts="albacore5" towards="pi3Bs*" address="10.0.3.x"/>
+	<interface hosts="albacore5*" address="10.1.x.x"/>
+	
+	<!--
+	<multicast-group hosts="cloudAs*" towards="router0" address="225.0.0.1"/>
+	<multicast-route hosts="router0" groups="225.0.0.1" children=">cloudAs*"/>
+	<multicast-route hosts="router1" groups="225.0.0.1" children=">routerbackbone"/>
+	<multicast-route hosts="router2" groups="225.0.0.1" children=">routerbackbone"/>
+	<multicast-route hosts="router3" groups="225.0.0.1" children=">routerbackbone"/>
+	<multicast-route hosts="routerbackbone" groups="225.0.0.1" children=">router0"/>
+	-->
+</config>

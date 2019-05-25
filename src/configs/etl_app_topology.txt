@@ -1,0 +1,10 @@
+# adjacency matrix of the DSP topology
+# src	dest	connection
+so	pa	1
+pa	rf	1
+rf	bf	1
+bf	ip	1
+ip	jo	1
+jo	an	1
+an	csv	1
+csv	si	1
