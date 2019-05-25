@@ -1,4 +1,4 @@
-package ecsnet.builder;
+package ecsnetpp.builder;
 
-@namespace(ecsnet);
+@namespace(ecsnetpp);
 @license(LGPL);

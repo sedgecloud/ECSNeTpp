@@ -14,7 +14,7 @@
 #include "../msg/Ack_m.h"
 #include "StreamingSupervisor.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 simsignal_t StreamingSupervisor::sentPkSize = registerSignal("sentPkSize");
 simsignal_t StreamingSupervisor::completedMIPS = registerSignal(

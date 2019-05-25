@@ -1,4 +1,4 @@
-package ecsnet.model;
+package ecsnetpp.model;
 
-@namespace(ecsnet);
+@namespace(ecsnetpp);
 @license(LGPL);

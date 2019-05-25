@@ -148,7 +148,7 @@ void doParsimUnpacking(omnetpp::cCommBuffer *, T& t)
 
 }  // namespace omnetpp
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 // forward
 template<typename T, typename A>
@@ -411,7 +411,7 @@ class StreamingMessageDescriptor : public omnetpp::cClassDescriptor
 
 Register_ClassDescriptor(StreamingMessageDescriptor)
 
-StreamingMessageDescriptor::StreamingMessageDescriptor() : omnetpp::cClassDescriptor("ecsnet::StreamingMessage", "omnetpp::cPacket")
+StreamingMessageDescriptor::StreamingMessageDescriptor() : omnetpp::cClassDescriptor("ecsnetpp::StreamingMessage", "omnetpp::cPacket")
 {
     propertynames = nullptr;
 }
@@ -676,5 +676,5 @@ void *StreamingMessageDescriptor::getFieldStructValuePointer(void *object, int f
     }
 }
 
-} // namespace ecsnet
+} // namespace ecsnetpp
 

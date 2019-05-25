@@ -1,4 +1,4 @@
-package ecsnet.stask;
+package ecsnetpp.stask;
 
-@namespace(ecsnet);
+@namespace(ecsnetpp);
 @license(LGPL);

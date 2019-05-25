@@ -17,7 +17,7 @@ using namespace omnetpp;
  * Builds a network dynamically, with the topology coming from a
  * text file.
  */
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(TaskBuilder);
 
@@ -130,7 +130,7 @@ void TaskBuilder::executeAllocationPlan(cModule *parent) {
         stask->addPar(cyclesPerEvent);
 
         // Add parameters to the tasks
-        if (staskType == "ecsnet.stask.StreamingSource") {
+        if (staskType == "ecsnetpp.stask.StreamingSource") {
 
             cDoubleParImpl *msgSize = new cDoubleParImpl();
             msgSize->setName("msgSize");
@@ -144,7 +144,7 @@ void TaskBuilder::executeAllocationPlan(cModule *parent) {
             stask->addPar(eventRate);
             setStaskBoolPar(stask, "isSourceEvRateDistributed", false);
 
-        } else if (staskType == "ecsnet.stask.StreamingOperator") {
+        } else if (staskType == "ecsnetpp.stask.StreamingOperator") {
             cDoubleParImpl *selectivityRatio = new cDoubleParImpl();
             selectivityRatio->setName("selectivityRatio");
             selectivityRatio->setDoubleValue(var1);

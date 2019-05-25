@@ -19,7 +19,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class ICpuCoreScheduler : public cSimpleModule {
 protected:
@@ -28,6 +28,6 @@ public:
     virtual long getNextCPUCoreIndex();
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* CPU_SCHEDULING_ICPUCORESCHEDULER_H_ */

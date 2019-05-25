@@ -13,9 +13,9 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package ecsnet.cpu.scheduling;
+package ecsnetpp.cpu.scheduling;
 
-import ecsnet.cpu.scheduling.ICpuCoreScheduler;
+import ecsnetpp.cpu.scheduling.ICpuCoreScheduler;
 
 simple RoundRobinCpuCoreScheduler like ICpuCoreScheduler {
     

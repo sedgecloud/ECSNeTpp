@@ -24,7 +24,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class ISTask: public cSimpleModule {
 public:
@@ -61,6 +61,6 @@ protected:
     virtual void publishCpuStateChanged(States::CPUState state);
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* STASK_ISTASK_H_ */

@@ -29,7 +29,7 @@ using namespace inet::math;
 using namespace inet::units::values;
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 
 class IdealNodeEnergyStorage : public cSimpleModule, public cListener

@@ -22,7 +22,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class NormallyDistributedSourceEventRate: public ISourceEventRateDistribution  {
 protected:
@@ -34,6 +34,6 @@ public:
     virtual double getMessageDelay() override;
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* MODEL_SOURCE_EVENTRATE_NORMALLYDISTRIBUTEDSOURCEEVENTRATE_H_ */

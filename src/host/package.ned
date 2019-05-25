@@ -1,4 +1,4 @@
-package ecsnet.host;
+package ecsnetpp.host;
 
-@namespace(ecsnet);
+@namespace(ecsnetpp);
 @license(LGPL);

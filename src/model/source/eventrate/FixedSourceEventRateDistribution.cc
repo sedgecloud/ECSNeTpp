@@ -15,7 +15,7 @@
 
 #include "FixedSourceEventRateDistribution.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(FixedSourceEventRateDistribution);
 

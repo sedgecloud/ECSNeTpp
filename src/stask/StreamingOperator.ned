@@ -13,7 +13,7 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package ecsnet.stask;
+package ecsnetpp.stask;
 
 simple StreamingOperator like ISTask
 {

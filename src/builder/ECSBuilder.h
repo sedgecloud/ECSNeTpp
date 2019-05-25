@@ -24,7 +24,7 @@
 
 using namespace tinyxml2;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class ECSBuilder : public cSimpleModule {
 //public:
@@ -44,6 +44,6 @@ protected:
             const char* nonDistributedValueVarName);
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* BUILDER_ECSBUILDER_H_ */

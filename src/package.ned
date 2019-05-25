@@ -1,3 +1,3 @@
-package ecsnet;
+package ecsnetpp;
 
 @license(LGPL);

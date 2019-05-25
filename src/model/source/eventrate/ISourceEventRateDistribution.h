@@ -19,7 +19,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class ISourceEventRateDistribution: public cSimpleModule
 {
@@ -31,6 +31,6 @@ public:
     virtual double getMessageDelay();
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* MODEL_SOURCE_EVENTRATE_ISOURCEEVENTRATEDISTRIBUTION_H_ */

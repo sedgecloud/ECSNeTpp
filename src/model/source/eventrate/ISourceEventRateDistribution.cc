@@ -15,9 +15,9 @@
 
 #include "ISourceEventRateDistribution.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 double ISourceEventRateDistribution::getMessageDelay(){
     throw new cRuntimeError("Source event rate distribution function is not implemented.");
 }
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

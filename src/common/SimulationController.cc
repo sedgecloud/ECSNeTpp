@@ -15,7 +15,7 @@
 
 #include "SimulationController.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 simsignal_t SimulationController::totalSimTimeChangedSignal = registerSignal("totalSimTimeChanged");
 
@@ -104,4 +104,4 @@ bool SimulationController::getStopEdgeIdleEnergyRecording(){
 //    // TODO Auto-generated destructor stub
 //}
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

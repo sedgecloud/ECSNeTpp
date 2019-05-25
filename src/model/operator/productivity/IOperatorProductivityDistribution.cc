@@ -15,7 +15,7 @@
 
 #include "IOperatorProductivityDistribution.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(IOperatorProductivityDistribution);
 

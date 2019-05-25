@@ -17,7 +17,7 @@
 #include "../stask/ISTask.h"
 #include "../power/States.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(CPUCore);
 
@@ -110,4 +110,4 @@ void CPUCore::handleMessage(cMessage *msg) {
     }
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

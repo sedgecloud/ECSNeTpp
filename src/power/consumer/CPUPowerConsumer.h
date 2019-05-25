@@ -24,7 +24,7 @@
 using namespace inet;
 using namespace inet::power;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class CPUPowerConsumer : public cSimpleModule, public cListener {
 protected:
@@ -51,6 +51,6 @@ public:
     virtual void receiveSignal(cComponent *source, simsignal_t signal, long value, cObject *details) override;
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* POWER_CONSUMER_CPUEPENERGYCONSUMER_H_ */

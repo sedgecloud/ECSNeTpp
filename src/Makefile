@@ -1,12 +1,12 @@
 #
-# OMNeT++/OMNEST Makefile for ECSNeT
+# OMNeT++/OMNEST Makefile for ECSNeTpp
 #
 # This file was generated with the command:
 #  opp_makemake -f --deep -KINET_PROJ=/home/gayashan/projects/research/omnetpp/inet -DINET_IMPORT -I$$\(INET_PROJ\)/src -L$$\(INET_PROJ\)/out/$$\(CONFIGNAME\)/src -lINET
 #
 
 # Name of target to be created (-o option)
-TARGET = ECSNeT$(EXE_SUFFIX)
+TARGET = ECSNeTpp$(EXE_SUFFIX)
 
 # User interface (uncomment one) (-u option)
 USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(TKENV_LIBS) $(QTENV_LIBS) $(CMDENV_LIBS)

@@ -17,7 +17,7 @@ using namespace omnetpp;
  * Builds a network dynamically, with the topology coming from a
  * text file.
  */
-namespace ecsnet {
+namespace ecsnetpp {
 
 class TaskBuilder: public cSimpleModule {
 protected:

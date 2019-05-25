@@ -16,7 +16,7 @@
 #include "GlobalStreamingSupervisor.h"
 #include "inet/networklayer/common/L3AddressResolver.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(GlobalStreamingSupervisor);
 
@@ -72,4 +72,4 @@ void GlobalStreamingSupervisor::resolveDownstreamNodeIPs() {
     }
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

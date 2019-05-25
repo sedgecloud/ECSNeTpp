@@ -13,13 +13,13 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package ecsnet.host;
-import ecsnet.stask.ISTask;
-import ecsnet.stask.StreamingSupervisor;
-import ecsnet.stask.Acker;
-import ecsnet.cpu.CPUCore;
-import ecsnet.cpu.scheduling.ICpuCoreScheduler;
-import ecsnet.cpu.scheduling.RoundRobinCpuCoreScheduler;
+package ecsnetpp.host;
+import ecsnetpp.stask.ISTask;
+import ecsnetpp.stask.StreamingSupervisor;
+import ecsnetpp.stask.Acker;
+import ecsnetpp.cpu.CPUCore;
+import ecsnetpp.cpu.scheduling.ICpuCoreScheduler;
+import ecsnetpp.cpu.scheduling.RoundRobinCpuCoreScheduler;
 import inet.node.inet.StandardHost;
 import inet.node.inet.WirelessHost;
 import inet.node.inet.NodeBase;

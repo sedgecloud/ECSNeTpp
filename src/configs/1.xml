@@ -7,20 +7,20 @@
 			<task>
 				<name>so</name>
 				<category>so</category>
-				<type>ecsnet.stask.StreamingSource</type>
+				<type>ecsnetpp.stask.StreamingSource</type>
 				<processingdelay>
 					<measuredtime>1000602044</measuredtime>
 				</processingdelay>
 				<msgsize>6880</msgsize>
 				<sourceevdistribution>
 					<name>FixedSourceEventRateDistribution</name>
-					<type>ecsnet.model.source.eventrate.FixedSourceEventRateDistribution</type>
+					<type>ecsnetpp.model.source.eventrate.FixedSourceEventRateDistribution</type>
 				</sourceevdistribution>			
 			</task>
 			<task>
 				<name>pa</name>
 				<category>pa</category>
-				<type>ecsnet.stask.StreamingOperator</type>
+				<type>ecsnetpp.stask.StreamingOperator</type>
 				<processingdelay>
 					<measuredtime>748722</measuredtime>
 				</processingdelay>				
@@ -36,7 +36,7 @@
 			<task>
 				<name>rf</name>
 				<category>rf</category>
-				<type>ecsnet.stask.StreamingOperator</type>
+				<type>ecsnetpp.stask.StreamingOperator</type>
 				<processingdelay>
 					<measuredtime>5391</measuredtime>
 				</processingdelay>
@@ -46,7 +46,7 @@
 			<task>
 				<name>bf</name>
 				<category>bf</category>
-				<type>ecsnet.stask.StreamingOperator</type>
+				<type>ecsnetpp.stask.StreamingOperator</type>
 				<processingdelay>
 					<measuredtime>92</measuredtime>
 				</processingdelay>
@@ -56,7 +56,7 @@
 			<task>
 				<name>ip</name>
 				<category>ip</category>
-				<type>ecsnet.stask.StreamingOperator</type>
+				<type>ecsnetpp.stask.StreamingOperator</type>
 				<processingdelay>
 					<measuredtime>10735</measuredtime>
 				</processingdelay>
@@ -66,7 +66,7 @@
 			<task>
 				<name>jo</name>
 				<category>jo</category>
-				<type>ecsnet.stask.StreamingOperator</type>
+				<type>ecsnetpp.stask.StreamingOperator</type>
 				<processingdelay>
 					<measuredtime>4384</measuredtime>
 				</processingdelay>
@@ -76,7 +76,7 @@
 			<task>
 				<name>an</name>
 				<category>an</category>
-				<type>ecsnet.stask.StreamingOperator</type>
+				<type>ecsnetpp.stask.StreamingOperator</type>
 				<processingdelay>
 					<measuredtime>13367</measuredtime>
 				</processingdelay>
@@ -86,7 +86,7 @@
 			<task>
 				<name>csv</name>
 				<category>csv</category>
-				<type>ecsnet.stask.StreamingOperator</type>
+				<type>ecsnetpp.stask.StreamingOperator</type>
 				<processingdelay>
 					<measuredtime>78706</measuredtime>
 				</processingdelay>
@@ -96,7 +96,7 @@
 			<task>
 				<name>si</name>
 				<category>si</category>
-				<type>ecsnet.stask.StreamingSink</type>
+				<type>ecsnetpp.stask.StreamingSink</type>
 				<processingdelay>
 					<measuredtime>195424</measuredtime>
 				</processingdelay>

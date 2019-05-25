@@ -10,7 +10,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class Acker: public cSimpleModule {
 

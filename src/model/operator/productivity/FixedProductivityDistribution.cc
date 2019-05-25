@@ -15,7 +15,7 @@
 
 #include "FixedProductivityDistribution.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(FixedProductivityDistribution);
 

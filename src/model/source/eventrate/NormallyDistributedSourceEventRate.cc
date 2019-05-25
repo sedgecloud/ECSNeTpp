@@ -15,7 +15,7 @@
 
 #include "NormallyDistributedSourceEventRate.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(NormallyDistributedSourceEventRate);
 
@@ -30,4 +30,4 @@ double NormallyDistributedSourceEventRate::getMessageDelay(){
     return val;
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

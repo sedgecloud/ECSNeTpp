@@ -13,7 +13,7 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package ecsnet.model.operator.productivity;
+package ecsnetpp.model.operator.productivity;
 
 //
 // TODO auto-generated module

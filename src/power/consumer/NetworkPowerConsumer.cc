@@ -18,7 +18,7 @@
 #include "inet/common/ModuleAccess.h"
 #include "../../stask/ISTask.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 simsignal_t NetworkPowerConsumer::networkPowerConsumptionChangedSignal = registerSignal("networkPowerConsumptionChanged");
 
@@ -161,4 +161,4 @@ void NetworkPowerConsumer::receiveSignal(cComponent *source,
     }
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

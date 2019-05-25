@@ -15,7 +15,7 @@
 
 #include "FixedSelectivityDistribution.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(FixedSelectivityDistribution);
 

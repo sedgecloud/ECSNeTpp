@@ -15,7 +15,7 @@
 
 #include "ISTask.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 simsignal_t ISTask::receivedStreamingMsgsSignal = registerSignal("receivedStreamingMsgs");
 simsignal_t ISTask::cpuUtilisationSignal = registerSignal("cpuUtilisationSignal");
@@ -43,4 +43,4 @@ long ISTask::getNextProcessorCoreIndex() {
     return myCpuCoreScheduler->getNextCPUCoreIndex();
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

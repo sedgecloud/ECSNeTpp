@@ -15,7 +15,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class StreamingSupervisor: public cSimpleModule , public inet::TCPSocket::CallbackInterface{
 

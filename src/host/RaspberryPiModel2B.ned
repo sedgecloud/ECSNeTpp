@@ -13,21 +13,21 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package ecsnet.host;
-import ecsnet.stask.ISTask;
-import ecsnet.stask.StreamingSupervisor;
-import ecsnet.stask.Acker;
-import ecsnet.cpu.CPUCore;
+package ecsnetpp.host;
+import ecsnetpp.stask.ISTask;
+import ecsnetpp.stask.StreamingSupervisor;
+import ecsnetpp.stask.Acker;
+import ecsnetpp.cpu.CPUCore;
 import inet.node.inet.StandardHost;
 import inet.node.inet.AdhocHost;
 import inet.node.inet.WirelessHost;
 import inet.node.inet.NodeBase;
 import inet.power.contract.IEnergyConsumer;
-import ecsnet.power.consumer.CPUPowerConsumer;
-import ecsnet.power.consumer.NetworkPowerConsumer;
-import ecsnet.power.storage.IdealNodeEnergyStorage;
-import ecsnet.cpu.scheduling.ICpuCoreScheduler;
-import ecsnet.cpu.scheduling.RoundRobinCpuCoreScheduler;
+import ecsnetpp.power.consumer.CPUPowerConsumer;
+import ecsnetpp.power.consumer.NetworkPowerConsumer;
+import ecsnetpp.power.storage.IdealNodeEnergyStorage;
+import ecsnetpp.cpu.scheduling.ICpuCoreScheduler;
+import ecsnetpp.cpu.scheduling.RoundRobinCpuCoreScheduler;
 import inet.power.contract.IEpEnergyConsumer;
 
 module RaspberryPiModel2B extends WirelessHost

@@ -21,7 +21,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class RoundRobinCpuCoreScheduler : public ICpuCoreScheduler{
 private:
@@ -33,6 +33,6 @@ public:
     virtual long getNextCPUCoreIndex() override;
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* CPU_SCHEDULING_ROUNDROBINCPUCORESCHEDULER_H_ */

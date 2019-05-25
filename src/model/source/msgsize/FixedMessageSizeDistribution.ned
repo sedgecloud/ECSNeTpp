@@ -13,7 +13,7 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package ecsnet.model.source.msgsize;
+package ecsnetpp.model.source.msgsize;
 
 //
 // TODO auto-generated module

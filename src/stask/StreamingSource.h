@@ -25,7 +25,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class StreamingSource: public ISTask {
 protected:
@@ -50,6 +50,6 @@ protected:
     virtual double getMessageSize();
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* STASK_STREAMINGSOURCE_H_ */

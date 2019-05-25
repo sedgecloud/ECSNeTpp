@@ -29,8 +29,8 @@ See ```src/host``` package for examples.
 ### Distributed Stream Processing application
 
 ```StreamingSource```, ```StreamingOperator```, ```StreamingSink``` module are represent each Source, Operator and Sink in the topology. ECSNeT++
-expects an adjacency matrix of the application topology (See ```configs\etl_app_topology.txt```) and a placement plan
-(See ```configs\1.xml```). 
+expects an adjacency matrix of the application topology (See ```configs/etl_app_topology.txt```) and a placement plan
+(See ```configs/1.xml```). 
 
 An example placement plan is shown below.
 
@@ -44,23 +44,23 @@ An example placement plan is shown below.
       <task>
         <name>source</name>
         <category>source</category>
-        <type>ecs.stask.StreamingSource</type>
+        <type>ecsnetpp.stask.StreamingSource</type>
         <processingdelay>
           <measuredtime>33406899</measuredtime>
         </processingdelay>
         <msgsize>6880</msgsize>
         <sourceevdistribution>
           <name>FixedSourceEventRateDistribution</name>
-          <type>ecs.model.source.eventrate.FixedSourceEventRateDistribution</type>
+          <type>ecsnetpp.model.source.eventrate.FixedSourceEventRateDistribution</type>
         </sourceevdistribution>			
       </task>
       <task>
         <name>parser</name>
         <category>operator</category>
-        <type>ecs.stask.StreamingOperator</type>
+        <type>ecsnetpp.stask.StreamingOperator</type>
         <selectivitydistribution>
           <name>FixedSelectivityDistribution</name>
-          <type>ecs.model.operator.selectivity.FixedSelectivityDistribution</type>
+          <type>ecsnetpp.model.operator.selectivity.FixedSelectivityDistribution</type>
           <values>
             <selectivityratio>2</selectivityratio>
           </values>
@@ -86,19 +86,19 @@ An example placement plan is shown below.
 #### Source Characteristics
 
 ##### Source Event Rate
-The `ecsnet_.model.source.eventrate.ISourceEventRateDistribution` interface should be extended to implement different source event rate distributions.
-See `ecsnet_.model.source.eventrate.FixedSourceEventRateDistribution` module for an example.
+The `ecsnetpp.model.source.eventrate.ISourceEventRateDistribution` interface should be extended to implement different source event rate distributions.
+See `ecsnetpp.model.source.eventrate.FixedSourceEventRateDistribution` module for an example.
 
 #### Source Message Size
-The `ecsnet_.model.source.msgsize.IMessageSizeDistribution` interface should be extended to implement different source message size distributions. 
-See `ecsnet_.model.source.msgsize.FixedMessageSizeDistribution` module for an example.
+The `ecsnetpp.model.source.msgsize.IMessageSizeDistribution` interface should be extended to implement different source message size distributions. 
+See `ecsnetpp.model.source.msgsize.FixedMessageSizeDistribution` module for an example.
 
 #### Operator Characteristics
 
 #### Operator Selectivity Ratio
-The `ecsnet_.model.operator.selectivity.IOperatorSelectivityDistribution` interface should be extended to implement different operator selectivity ratio distributions.
-See `ecsnet_.model.operator.selectivity.FixedSelectivityDistribution` module for an example.
+The `ecsnetpp.model.operator.selectivity.IOperatorSelectivityDistribution` interface should be extended to implement different operator selectivity ratio distributions.
+See `ecsnetpp.model.operator.selectivity.FixedSelectivityDistribution` module for an example.
 
 #### Operator Productivity Ratio
-The `ecsnet_.model.operator.productivity.IOperatorProductivityDistribution` interface should be extended to implement different operator productivity ratio distributions.
-See `ecsnet_.model.operator.productivity.FixedProductivityDistribution` module for an example.
+The `ecsnetpp.model.operator.productivity.IOperatorProductivityDistribution` interface should be extended to implement different operator productivity ratio distributions.
+See `ecsnetpp.model.operator.productivity.FixedProductivityDistribution` module for an example.

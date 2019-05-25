@@ -17,7 +17,7 @@
 #endif
 
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 // cplusplus {{
 #include "omnetpp.h"
@@ -110,7 +110,7 @@ class StreamingMessage : public ::omnetpp::cPacket
 inline void doParsimPacking(omnetpp::cCommBuffer *b, const StreamingMessage& obj) {obj.parsimPack(b);}
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, StreamingMessage& obj) {obj.parsimUnpack(b);}
 
-} // namespace ecsnet
+} // namespace ecsnetpp
 
 #endif // ifndef __ECSNET_STREAMINGMESSAGE_M_H
 

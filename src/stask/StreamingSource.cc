@@ -15,7 +15,7 @@
 
 #include "StreamingSource.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(StreamingSource);
 
@@ -133,4 +133,4 @@ double StreamingSource::getMessageSize() {
     }
     return msgSize;
 }
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

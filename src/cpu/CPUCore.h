@@ -21,7 +21,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class CPUCore : public cSimpleModule{
 protected:
@@ -42,6 +42,6 @@ protected:
     virtual omnetpp::SimTime calculateDelay(bool isProcessingDelayInCpuCycles, double processingDelay, long threads);
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* CPU_CPUCORE_H_ */

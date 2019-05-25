@@ -15,7 +15,7 @@
 
 #include "RoundRobinCpuCoreScheduler.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(RoundRobinCpuCoreScheduler);
 
@@ -29,4 +29,4 @@ long RoundRobinCpuCoreScheduler::getNextCPUCoreIndex() {
     return lastCPUIndex;
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

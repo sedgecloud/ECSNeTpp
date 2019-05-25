@@ -15,7 +15,7 @@
 
 #include "ICpuCoreScheduler.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(ICpuCoreScheduler)
 
@@ -23,4 +23,4 @@ long ICpuCoreScheduler::getNextCPUCoreIndex(){
     throw new cRuntimeError("A CPU scheduler is not assigned to get the next CPU core index.");
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

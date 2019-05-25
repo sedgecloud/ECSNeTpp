@@ -148,7 +148,7 @@ void doParsimUnpacking(omnetpp::cCommBuffer *, T& t)
 
 }  // namespace omnetpp
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 // forward
 template<typename T, typename A>
@@ -272,7 +272,7 @@ class AckDescriptor : public omnetpp::cClassDescriptor
 
 Register_ClassDescriptor(AckDescriptor)
 
-AckDescriptor::AckDescriptor() : omnetpp::cClassDescriptor("ecsnet::Ack", "omnetpp::cPacket")
+AckDescriptor::AckDescriptor() : omnetpp::cClassDescriptor("ecsnetpp::Ack", "omnetpp::cPacket")
 {
     propertynames = nullptr;
 }
@@ -477,5 +477,5 @@ void *AckDescriptor::getFieldStructValuePointer(void *object, int field, int i) 
     }
 }
 
-} // namespace ecsnet
+} // namespace ecsnetpp
 

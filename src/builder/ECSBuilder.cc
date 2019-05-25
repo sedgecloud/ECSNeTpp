@@ -22,7 +22,7 @@
 using namespace tinyxml2;
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(ECSBuilder);
 
@@ -68,8 +68,8 @@ void ECSBuilder::connect(cGate *src, cGate *dest, double delay, double ber, doub
 
 void ECSBuilder::executeAllocationPlan(cModule *parent) {
     const char* allocationFileName = par("allocationPlanFile").stringValue();
-    const char* STREAMING_SOURCE_NAME = "ecsnet.stask.StreamingSource";
-    const char* STREAMING_OPERATOR_NAME = "ecsnet.stask.StreamingOperator";
+    const char* STREAMING_SOURCE_NAME = "ecsnetpp.stask.StreamingSource";
+    const char* STREAMING_OPERATOR_NAME = "ecsnetpp.stask.StreamingOperator";
     std::string line;
 
     // maps needed to create connections between tasks
@@ -452,4 +452,4 @@ void ECSBuilder::setupDistribution(XMLElement* task, const char* taskDistributio
     stask->addPar(isDistributionEnabledBoolPar);
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

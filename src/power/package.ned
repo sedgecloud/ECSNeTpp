@@ -1,4 +1,4 @@
-package ecsnet.power;
+package ecsnetpp.power;
 
-@namespace(ecsnet);
+@namespace(ecsnetpp);
 @license(LGPL);

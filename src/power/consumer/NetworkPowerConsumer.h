@@ -24,7 +24,7 @@ using namespace inet;
 using namespace inet::power;
 using namespace inet::physicallayer;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class NetworkPowerConsumer: public cSimpleModule, public cListener {
 
@@ -66,6 +66,6 @@ public:
 };
 
 }
-            /* namespace ecsnet */
+            /* namespace ecsnetpp */
 
 #endif /* POWER_CONSUMER_STREAMINGENERGYCONSUMER_H_ */

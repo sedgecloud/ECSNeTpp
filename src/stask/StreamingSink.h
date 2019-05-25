@@ -22,7 +22,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class StreamingSink : public ISTask{
 protected:
@@ -31,6 +31,6 @@ protected:
 
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* STASK_STREAMINGSINK_H_ */

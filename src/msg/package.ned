@@ -1,4 +1,4 @@
-package ecsnet.msg;
+package ecsnetpp.msg;
 
-@namespace(ecsnet);
+@namespace(ecsnetpp);
 @license(LGPL);

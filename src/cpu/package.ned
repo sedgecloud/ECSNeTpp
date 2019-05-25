@@ -1,4 +1,4 @@
-package ecsnet.cpu;
+package ecsnetpp.cpu;
 
-@namespace(ecsnet);
+@namespace(ecsnetpp);
 @license(LGPL);

@@ -24,7 +24,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class StreamingOperator : public ISTask{
 private:
@@ -55,6 +55,6 @@ protected:
     virtual double getProductivityRatio();
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* STASK_STREAMINGOPERATOR_H_ */

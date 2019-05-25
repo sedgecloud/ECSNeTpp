@@ -13,7 +13,7 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package ecsnet.model.operator.selectivity;
+package ecsnetpp.model.operator.selectivity;
 
 //
 // TODO auto-generated module

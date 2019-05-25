@@ -24,7 +24,7 @@
 using namespace inet;
 using namespace inet::power;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 simsignal_t IdealNodeEnergyStorage::energyConsumptionChangedSignal = registerSignal("energyConsumptionChanged");
 simsignal_t IdealNodeEnergyStorage::powerConsumptionChangedSignal = registerSignal("powerConsumptionChanged");

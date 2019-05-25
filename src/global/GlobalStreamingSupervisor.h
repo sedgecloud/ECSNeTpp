@@ -25,7 +25,7 @@
 //using namespace inet;
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 class GlobalStreamingSupervisor: public cSimpleModule {
 private:
@@ -48,6 +48,6 @@ public:
 //    virtual ~GlobalStreamingSupervisor();
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* GLOBAL_GLOBALSTREAMINGSUPERVISOR_H_ */

@@ -1,4 +1,4 @@
-package ecsnet.power.consumer;
+package ecsnetpp.power.consumer;
 
-@namespace(ecsnet);
+@namespace(ecsnetpp);
 @license(LGPL);

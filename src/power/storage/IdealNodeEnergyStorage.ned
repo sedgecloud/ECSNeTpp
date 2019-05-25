@@ -15,7 +15,7 @@
 // along with this program; if not, see <http://www.gnu.org/licenses/>.
 //
 
-package ecsnet.power.storage;
+package ecsnetpp.power.storage;
 
 import inet.power.base.EpEnergyStorageBase;
 

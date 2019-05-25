@@ -15,7 +15,7 @@
 
 #include "StreamingOperator.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(StreamingOperator);
 
@@ -201,4 +201,4 @@ double StreamingOperator::getProductivityRatio(){
     return productivityRatio;
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

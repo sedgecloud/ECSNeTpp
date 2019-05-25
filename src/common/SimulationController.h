@@ -21,7 +21,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet{
+namespace ecsnetpp{
 
 class SimulationController  :  public cSimpleModule, public cListener{
 protected:
@@ -45,6 +45,6 @@ public:
     virtual void receiveSignal(cComponent *source, simsignal_t signalID, long value, cObject *details) override;
 };
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */
 
 #endif /* COMMON_SIMULATIONCONTROLLER_H_ */

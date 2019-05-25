@@ -15,7 +15,7 @@
 
 #include "UniformSourceEventRateDistribution.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(UniformSourceEventRateDistribution);
 

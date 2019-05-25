@@ -15,7 +15,7 @@
 
 #include "IMessageSizeDistribution.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(IMessageSizeDistribution);
 

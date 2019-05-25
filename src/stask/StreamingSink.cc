@@ -15,7 +15,7 @@
 
 #include "StreamingSink.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(StreamingSink);
 
@@ -80,4 +80,4 @@ void StreamingSink::handleMessage(cMessage *msg) {
 //        publishCpuStateChanged(States::CPU_IDLE);
 //    }
 }
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

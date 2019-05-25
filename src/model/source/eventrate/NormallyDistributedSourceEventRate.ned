@@ -13,7 +13,7 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package ecsnet.model.source.eventrate;
+package ecsnetpp.model.source.eventrate;
 
 simple NormallyDistributedSourceEventRate like ISourceEventRateDistribution
 {

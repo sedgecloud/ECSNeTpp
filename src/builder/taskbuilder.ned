@@ -13,7 +13,7 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package ecsnet.builder;
+package ecsnetpp.builder;
 //
 // Dynamically allocates tasks to the host network, 
 // with the allocation plan coming from text files.

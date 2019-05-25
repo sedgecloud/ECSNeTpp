@@ -22,7 +22,7 @@
 
 using namespace omnetpp;
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 /**
  * TODO - Generated class

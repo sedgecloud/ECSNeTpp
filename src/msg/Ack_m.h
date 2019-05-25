@@ -5,8 +5,8 @@
 #if defined(__clang__)
 #  pragma clang diagnostic ignored "-Wreserved-id-macro"
 #endif
-#ifndef __ECSNET_ACK_M_H
-#define __ECSNET_ACK_M_H
+#ifndef __ECSNETPP_ACK_M_H
+#define __ECSNETPP_ACK_M_H
 
 #include <omnetpp.h>
 
@@ -17,7 +17,7 @@
 #endif
 
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 /**
  * Class generated from <tt>msg/Ack.msg:21</tt> by nedtool.
@@ -64,7 +64,7 @@ class Ack : public ::omnetpp::cPacket
 inline void doParsimPacking(omnetpp::cCommBuffer *b, const Ack& obj) {obj.parsimPack(b);}
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Ack& obj) {obj.parsimUnpack(b);}
 
-} // namespace ecsnet
+} // namespace ecsnetpp
 
-#endif // ifndef __ECSNET_ACK_M_H
+#endif // ifndef __ECSNETPP_ACK_M_H
 

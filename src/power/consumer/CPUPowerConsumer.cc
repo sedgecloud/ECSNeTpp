@@ -15,7 +15,7 @@
 
 #include "CPUPowerConsumer.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 simsignal_t CPUPowerConsumer::cpuPowerConsumptionChangedSignal = registerSignal("cpuPowerConsumptionChanged");
 
@@ -77,4 +77,4 @@ void CPUPowerConsumer::receiveSignal(cComponent *source, simsignal_t signal,
     }
 }
 
-} /* namespace ecsnet */
+} /* namespace ecsnetpp */

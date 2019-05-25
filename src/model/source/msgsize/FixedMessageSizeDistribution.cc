@@ -15,7 +15,7 @@
 
 #include "FixedMessageSizeDistribution.h"
 
-namespace ecsnet {
+namespace ecsnetpp {
 
 Define_Module(FixedMessageSizeDistribution);
 
