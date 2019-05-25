@@ -1,0 +1,12 @@
+*.[oa]
+*~
+*.swp
+out/
+simulations/runexpr.sh
+simulations/Makefile*
+src/ECSNeT
+simulations/*.csv
+simulations/results/
+simulations/results/export/
+*.anf
+TestEdgeCloud
