@@ -32,7 +32,7 @@ See ```src/host``` package for examples.
 expects an adjacency matrix of the application topology (See ```configs/etl_app_topology.txt```) and a placement plan
 (See ```configs/1.xml```). 
 
-An example placement plan is shown below.
+An example placement plan is shown below. The XML schema for generating the placement plan is available [here](https://github.com/sedgecloud/ECSNeTpp/blob/master/src/configs/placement-plan-schema.xsd).
 
 ```xml
 <?xml version="1.0" ?>
@@ -102,3 +102,9 @@ See `ecsnetpp.model.operator.selectivity.FixedSelectivityDistribution` module fo
 #### Operator Productivity Ratio
 The `ecsnetpp.model.operator.productivity.IOperatorProductivityDistribution` interface should be extended to implement different operator productivity ratio distributions.
 See `ecsnetpp.model.operator.productivity.FixedProductivityDistribution` module for an example.
+
+### CPU Scheduling
+
+#### Changing the behaviour of the CPU scheduler
+We have implemented a Round Robin Scheduler for selecting the CPU core for processing a streaming event at any task. It is possible to implement other scheduling strategies by implementing the `ecsnetpp.cpu.scheduling.ICpuCoreScheduler` interface.
+The scheduler can be set at the host using the `cpuCoreSchedulerType` configuration (See one of the host devices for an example use of `ecsnetpp.cpu.scheduling.RoundRobinCpuCoreScheduler` as the core scheduler).
