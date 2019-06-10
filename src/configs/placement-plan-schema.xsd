@@ -31,15 +31,16 @@
         <xs:element ref="category"/>
         <xs:element ref="type"/>
         <xs:element ref="processingdelay"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="selectivity"/>
+          <xs:element ref="productivity"/>
+        </xs:sequence>
         <xs:choice minOccurs="0">
-          <xs:sequence>
-            <xs:element ref="msgsize"/>
-            <xs:element ref="sourceevdistribution"/>
-          </xs:sequence>
-          <xs:sequence>
-            <xs:element ref="selectivity"/>
-            <xs:element ref="productivity"/>
-          </xs:sequence>
+          <xs:element ref="msgsize"/>
+          <xs:element ref="msgsizedistribution"/>
+        </xs:choice>
+        <xs:choice minOccurs="0">
+          <xs:element ref="sourceevdistribution"/>
           <xs:sequence>
             <xs:element ref="selectivitydistribution"/>
             <xs:element ref="productivitydistribution"/>
@@ -59,17 +60,26 @@
   </xs:element>
   <xs:element name="cpucycles" type="xs:integer"/>
   <xs:element name="measuredtime" type="xs:integer"/>
-  <xs:element name="msgsize" type="xs:integer"/>
+  <xs:element name="selectivity" type="xs:integer"/>
+  <xs:element name="productivity" type="xs:decimal"/>
+  <xs:element name="msgsizedistribution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="type"/>
+        <xs:element ref="values"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="sourceevdistribution">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="name"/>
         <xs:element ref="type"/>
+        <xs:element minOccurs="0" ref="values"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="selectivity" type="xs:integer"/>
-  <xs:element name="productivity" type="xs:integer"/>
   <xs:element name="selectivitydistribution">
     <xs:complexType>
       <xs:sequence>
@@ -90,14 +100,22 @@
   </xs:element>
   <xs:element name="name" type="xs:NCName"/>
   <xs:element name="type" type="xs:NCName"/>
+  <xs:element name="msgsize" type="xs:integer"/>
   <xs:element name="values">
     <xs:complexType>
       <xs:choice>
+        <xs:element ref="msgsize"/>
         <xs:element ref="productivityratio"/>
         <xs:element ref="selectivityratio"/>
+        <xs:sequence>
+          <xs:element ref="begin"/>
+          <xs:element ref="end"/>
+        </xs:sequence>
       </xs:choice>
     </xs:complexType>
   </xs:element>
   <xs:element name="productivityratio" type="xs:decimal"/>
   <xs:element name="selectivityratio" type="xs:decimal"/>
+  <xs:element name="begin" type="xs:integer"/>
+  <xs:element name="end" type="xs:decimal"/>
 </xs:schema>
