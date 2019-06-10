@@ -26,6 +26,12 @@ After cloning the repository run ```make makefiles``` followed by ```make```.
 ```WirelessHost``` module or the ```StandardHost``` module of the INET framework can be extended to build either a IEEE 802.11 wireless enabled device or a Ethernet enabled host device respectively.
 See ```src/host``` package for examples.
 
+#### Network Support
+We have created a [LTE plugin](https://github.com/sedgecloud/ECSNeT-LTE-Plugin) for ECSNeT++ to add LTE User Plane connectivity to the networking model using the [SimuLTE simulation tool](http://simulte.com/index.html).
+An example is available in the github project of the plugin.
+
+Similarly, other network models can also be adopted in to ECSNeT++ by creating hosts that use the network model.
+
 ### Distributed Stream Processing application
 
 ```StreamingSource```, ```StreamingOperator```, ```StreamingSink``` module are represent each Source, Operator and Sink in the topology. ECSNeT++
