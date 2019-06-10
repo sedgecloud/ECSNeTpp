@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="devices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="device"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="device">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="index-range"/>
+        <xs:element ref="tasks"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="index-range" type="xs:NMTOKEN"/>
+  <xs:element name="tasks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="task"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="task">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="category"/>
+        <xs:element ref="type"/>
+        <xs:element ref="processingdelay"/>
+        <xs:choice minOccurs="0">
+          <xs:sequence>
+            <xs:element ref="msgsize"/>
+            <xs:element ref="sourceevdistribution"/>
+          </xs:sequence>
+          <xs:sequence>
+            <xs:element ref="selectivity"/>
+            <xs:element ref="productivity"/>
+          </xs:sequence>
+          <xs:sequence>
+            <xs:element ref="selectivitydistribution"/>
+            <xs:element ref="productivitydistribution"/>
+          </xs:sequence>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="category" type="xs:NCName"/>
+  <xs:element name="processingdelay">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="cpucycles"/>
+        <xs:element ref="measuredtime"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cpucycles" type="xs:integer"/>
+  <xs:element name="measuredtime" type="xs:integer"/>
+  <xs:element name="msgsize" type="xs:integer"/>
+  <xs:element name="sourceevdistribution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="type"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="selectivity" type="xs:integer"/>
+  <xs:element name="productivity" type="xs:integer"/>
+  <xs:element name="selectivitydistribution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="type"/>
+        <xs:element ref="values"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="productivitydistribution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="type"/>
+        <xs:element ref="values"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:NCName"/>
+  <xs:element name="type" type="xs:NCName"/>
+  <xs:element name="values">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="productivityratio"/>
+        <xs:element ref="selectivityratio"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="productivityratio" type="xs:decimal"/>
+  <xs:element name="selectivityratio" type="xs:decimal"/>
+</xs:schema>
